@@ -93,7 +93,7 @@ make -f Makefile-serial
 # make a copy of original main file
 main_file_extn="${main_file##*.}"
 main_file_noextn="${main_file%.*}"
-main_file_orig="$main_file_noextn"_original"$main_file_extn"
+main_file_orig="$main_file_noextn"_original."$main_file_extn"
 cp $main_file $main_file_orig
 
 # make a copy of original execuatble
